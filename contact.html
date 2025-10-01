@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>お問い合わせ | とうみん工業大學</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+      form {
+        display: grid;
+        gap: 1rem;
+      }
+      label {
+        font-weight: 600;
+        color: var(--brown);
+      }
+      input,
+      textarea,
+      select {
+        width: 100%;
+        padding: 0.7rem;
+        border: 1px solid rgba(90, 56, 30, 0.3);
+        border-radius: 10px;
+        font-size: 1rem;
+        font-family: inherit;
+      }
+      textarea {
+        min-height: 160px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a class="brand" href="index.html">
+          <img src="materials/ChatGPT Image Oct 1, 2025 at 08_56_34 PM.png" alt="とうみん工業大學の紋章" />
+          <span>とうみん工業大學</span>
+        </a>
+        <nav>
+          <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="about.html">大學について</a></li>
+            <li><a href="faculty-it.html">情報学部</a></li>
+            <li><a href="faculty-ss.html">水煙草学部</a></li>
+            <li><a href="student-life.html">学生生活</a></li>
+            <li><a href="president.html">学長挨拶</a></li>
+            <li><a href="contact.html" aria-current="page">お問い合わせ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-text">
+          <h1>お問い合わせ</h1>
+          <p class="lead">資料請求、入試、共同研究など各種お問い合わせは下記フォームをご利用ください。ささやかな相談でも大歓迎です。</p>
+        </div>
+        <div class="hero-img">
+          <img src="https://placehold.jp/4c2f1d/ffffff/420x300.png?text=Contact+Us" alt="お問い合わせ" />
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">お問い合わせフォーム</h2>
+        <form>
+          <div>
+            <label for="name">お名前</label>
+            <input id="name" name="name" type="text" placeholder="例：狸部 たろう" required />
+          </div>
+          <div>
+            <label for="email">メールアドレス</label>
+            <input id="email" name="email" type="email" placeholder="example@toumin-tech.ac.jp" required />
+          </div>
+          <div>
+            <label for="type">お問い合わせ種別</label>
+            <select id="type" name="type">
+              <option value="admission">入試・オープンキャンパス</option>
+              <option value="collaboration">共同研究・連携</option>
+              <option value="media">取材のご相談</option>
+              <option value="other">その他</option>
+            </select>
+          </div>
+          <div>
+            <label for="message">お問い合わせ内容</label>
+            <textarea id="message" name="message" placeholder="ご質問やご要望をお聞かせください"></textarea>
+          </div>
+          <div>
+            <button type="submit">送信する</button>
+          </div>
+        </form>
+        <p class="section-description">※送信ボタンはダミーです。正式なお問い合わせはお電話またはメールをご利用ください。</p>
+      </section>
+
+      <section>
+        <h2 class="section-title">連絡先</h2>
+        <div class="grid grid-2">
+          <article class="card">
+            <h3>入試広報課</h3>
+            <p>電話：042-000-1234（平日9:00-18:00）<br />メール：admission@toumin-tech.ac.jp</p>
+          </article>
+          <article class="card">
+            <h3>総務課</h3>
+            <p>電話：042-000-1000（平日9:00-17:00）<br />メール：info@toumin-tech.ac.jp</p>
+          </article>
+          <article class="card">
+            <h3>共同研究窓口</h3>
+            <p>電話：042-000-5678（平日10:00-19:00）<br />メール：collab@toumin-tech.ac.jp</p>
+          </article>
+          <article class="card">
+            <h3>夜間相談ホットライン</h3>
+            <p>電話：042-000-2468（平日・土曜 20:00-24:00）<br />メッセージアプリ：@toumin-night</p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">アクセス</h2>
+        <div class="grid grid-2">
+          <article class="card">
+            <h3>所在地</h3>
+            <p>〒197-0000 東京都狸沢市寝落町1-2-3<br />狸沢駅よりバス8分「工業大學前」下車すぐ</p>
+          </article>
+          <article class="card">
+            <h3>キャンパスマップ</h3>
+            <img src="https://placehold.jp/600x400.png?text=Campus+Map" alt="キャンパスマップ" />
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div>© とうみん工業大學 Toumin Institute of Technology</div>
+        <div>〒197-0000 東京都狸沢市寝落町1-2-3</div>
+        <div><a href="contact.html">お問い合わせ</a> / <a href="about.html">アクセス</a></div>
+      </div>
+    </footer>
+  </body>
+</html>
