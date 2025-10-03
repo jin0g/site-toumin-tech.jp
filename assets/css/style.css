@@ -1,11 +1,12 @@
+/* Palette: Canva "Desert Sunset" (#264653, #2a9d8f, #e9c46a, #f4a261, #e76f51) */
 :root {
-  --brown-dark: #3b2211;
-  --brown: #5a381e;
-  --brown-light: #8a5f3e;
-  --cream: #f8f1e4;
-  --sand: #e1c9a6;
-  --accent: #c48e4d;
-  --text-color: #2d1b10;
+  --brown-dark: #1d3557; /* 深いミッドナイトブルー */
+  --brown: #264653; /* 落ち着いたティール */
+  --brown-light: #2a9d8f; /* 海風を感じるグリーン */
+  --cream: #f5f3ef; /* 柔らかいベースカラー */
+  --sand: #e9c46a; /* ハイライト用のハニーゴールド */
+  --accent: #e76f51; /* 差し色のサンセットコーラル */
+  --text-color: #1f2a32;
 }
 
 * {
@@ -16,7 +17,7 @@ body {
   margin: 0;
   font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
   color: var(--text-color);
-  background-color: #fff;
+  background-color: #f6f8fb;
   line-height: 1.7;
 }
 
@@ -43,7 +44,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 10;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 12px rgba(29, 53, 87, 0.2);
 }
 
 .header-container {
@@ -117,13 +118,14 @@ main {
 .hero-text p {
   margin: 0;
   font-size: 1.05rem;
+  color: rgba(38, 70, 83, 0.8);
 }
 
 .hero-img {
   background: linear-gradient(135deg, var(--brown-light), var(--brown-dark));
   padding: 1.2rem;
   border-radius: 24px;
-  box-shadow: 0 12px 30px rgba(90, 56, 30, 0.25);
+  box-shadow: 0 12px 32px rgba(29, 53, 87, 0.24);
 }
 
 section {
@@ -138,7 +140,7 @@ section {
 
 .section-description {
   margin-bottom: 1.2rem;
-  color: rgba(45, 27, 16, 0.85);
+  color: rgba(29, 53, 87, 0.78);
 }
 
 .grid {
@@ -154,7 +156,7 @@ section {
   background-color: var(--cream);
   padding: 1.4rem;
   border-radius: 16px;
-  box-shadow: 0 6px 18px rgba(58, 34, 17, 0.08);
+  box-shadow: 0 8px 20px rgba(38, 70, 83, 0.12);
 }
 
 .card h3 {
@@ -174,7 +176,7 @@ section {
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
-  background-color: rgba(90, 56, 30, 0.07);
+  background-color: rgba(42, 157, 143, 0.1);
   padding: 1.2rem 1.4rem;
   border-radius: 12px;
 }
@@ -202,7 +204,7 @@ section {
 
 footer {
   background-color: var(--brown-dark);
-  color: #f5ede1;
+  color: #ecf2f8;
   padding: 1.6rem 0;
 }
 
@@ -217,11 +219,11 @@ footer .footer-container {
 }
 
 footer a {
-  color: #f5ede1;
+  color: #ecf2f8;
 }
 
 .table-like {
-  border: 1px solid rgba(58, 34, 17, 0.2);
+  border: 1px solid rgba(38, 70, 83, 0.18);
   border-radius: 12px;
   overflow: hidden;
 }
@@ -234,11 +236,11 @@ footer a {
 }
 
 .table-like .row:nth-child(odd) {
-  background-color: rgba(225, 201, 166, 0.32);
+  background-color: rgba(233, 196, 106, 0.24);
 }
 
 .table-like .row:nth-child(even) {
-  background-color: rgba(248, 241, 228, 0.6);
+  background-color: rgba(246, 244, 240, 0.8);
 }
 
 .badge {
@@ -246,7 +248,7 @@ footer a {
   align-items: center;
   justify-content: center;
   padding: 0.4rem;
-  background-color: rgba(90, 56, 30, 0.12);
+  background-color: rgba(42, 157, 143, 0.18);
   border-radius: 999px;
 }
 
@@ -276,14 +278,14 @@ button,
 button:hover,
 button:focus {
   transform: translateY(-2px);
-  box-shadow: 0 8px 16px rgba(196, 142, 77, 0.35);
+  box-shadow: 0 10px 20px rgba(231, 111, 81, 0.32);
 }
 
 blockquote {
   margin: 0;
   padding-left: 1rem;
   border-left: 4px solid var(--accent);
-  color: rgba(45, 27, 16, 0.85);
+  color: rgba(29, 53, 87, 0.78);
   font-style: italic;
 }
 
