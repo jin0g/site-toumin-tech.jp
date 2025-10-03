@@ -1,18 +1,16 @@
 # 作業メモ
 
-## 方針
-- CSSは`assets/css/style.css`で共通管理し、HTMLは各ページを個別構成。
-- GitHub Pagesで拡張子なしルーティングに合わせ、内部リンクは`.html`拡張子を含めない。
-- 画像やスクリプトは`assets/`配下にまとめ、ディレクトリは1階層で管理する。
+## 共通ルール
+1. CSSは`assets/css/style.css`に集約し、HTMLの共通化は行わずページ単位で管理する。
+2. 内部リンクは拡張子なしで指定し、GitHub Pagesのフラットなルーティングに合わせる。
+3. 静的アセットは`assets/`直下に置き、`assets/css`・`assets/image`（必要時`assets/js`）など一階層構造で整理する。
+4. 画像は用途が分かるファイル名で管理し、サブディレクトリを作らない。
+5. `_`から始まるディレクトリはJekyllで無視されるため作らない（`.nojekyll`も配置しない）。
+6. サイト内でリンクされないページや素材は保持しない。
 
-## 今回実施した主な変更
-- 画像アセットを`assets/image/`直下にフラット化し、用途のわかる命名（例: `hero-home.jpg`）。
-- 未使用・重複のアセットとページ（`shisha.html`, `assets/image/map.png`, `assets/image/president.png`）を削除。
-- カラーリングはCanvaの「Desert Sunset」パレットを採用し、`style.css`のカスタムプロパティで統一。
-- ナビゲーション／フッターなど全リンクを拡張子なしに統一。
-- 旧`materials/`ディレクトリと`CNAME`を整理済み。
-
-## 運用注意
-- 画像追加時は`assets/image/`直下へ配置し、命名規則を守る。
-- 新規ページは必要最小限で作り、リンクがないページは残さない。
-- `.nojekyll`は未配置のため、先頭に`_`が付くディレクトリ名は使用しない。
+## 最近の変更概要
+- Canva「Desert Sunset」パレットに合わせて`style.css`のカスタムプロパティを刷新。
+- 画像アセットを`assets/image/hero-*.jpg`などフラットな命名で再配置。
+- 未使用の`shisha.html`と画像（`map.png`, `president.png`）を削除。
+- 全ページのナビゲーションとフッターリンクから`.html`拡張子を除去。
+- 旧`materials/`以下のファイルと`CNAME`を整理。
